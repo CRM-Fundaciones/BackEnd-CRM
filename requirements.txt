@@ -1,6 +1,6 @@
 # Django
-django
-django-extensions
+django==4.1.1
+django-extensions==3.2.1
 
 # Python
-ipython
+ipython==8.5.0
