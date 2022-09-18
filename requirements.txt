@@ -1,0 +1,6 @@
+# Django
+django
+django-extensions
+
+# Python
+ipython
