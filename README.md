@@ -43,7 +43,5 @@ export PYTHONPATH=[/path/to/repo]BackEnd-CRM
 
 ```
 workon crm
-
 pip install -r requirements.txt
-
 ```
