@@ -26,7 +26,24 @@ source ~/.bashrc # Or ~/.zshrc
 
 
 ### Create an enviroment
+
+1. Create the enviroment
 ```
 cd BackEnd-CRM/
 mkvirtualenv -a . --python=python3.8 crm
+deactivate
+```
+
+2. Add to ~/Envs/crm/bin/postactivate:
+```
+export PYTHONPATH=[/path/to/repo]BackEnd-CRM
+```
+
+### Install the requieremnts
+
+```
+workon crm
+
+pip install -r requirements.txt
+
 ```
