@@ -43,6 +43,7 @@ LOCAL_APPS = [
     'person.apps.PersonConfig',
     'drugbank.apps.DrugbankConfig',
     'institution.apps.InstitutionConfig',
+    'events.apps.EventsConfig'
 ]
 
 
