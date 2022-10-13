@@ -27,14 +27,29 @@ source ~/.bashrc # Or ~/.zshrc
 
 ### Create an enviroment
 
-1. Create the enviroment
+1. Add deadsnakes:
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+```
+
+2. Install python3.8:
+```
+sudo apt install python3.8 python3.8-dev
+```
+
+3. Install distutils:
+```
+sudo apt install python3.8-distutils
+```
+
+4. Create the enviroment
 ```
 cd BackEnd-CRM/
 mkvirtualenv -a . --python=python3.8 crm
 deactivate
 ```
 
-2. Add to ~/Envs/crm/bin/postactivate:
+5. Add to ~/Envs/crm/bin/postactivate:
 ```
 export PYTHONPATH=[/path/to/repo]BackEnd-CRM
 ```
