@@ -7,7 +7,7 @@ from django.db.models import CheckConstraint, Q, F
 class Person(models.Model):
     name = models.CharField(max_length=40)
     dni = models.IntegerField()
-    address = models.CharField(max_length=40)
+    address = models.CharField(max_length=40, default="")
     phone_number = models.IntegerField()
     email = models.EmailField()
     created_at = models.DateField(auto_now_add=True)
@@ -35,7 +35,7 @@ class HealthProfessional(models.Model):
     person = models.OneToOneField(Person, on_delete=models.PROTECT)
 
     def __str__(self):
-        return self.preson.name
+        return self.person.name
 
 
 class Patient(models.Model):
