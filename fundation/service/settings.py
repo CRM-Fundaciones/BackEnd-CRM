@@ -175,22 +175,12 @@ ADMIN_SHORTCUTS = [
         ]
     },
     {
-        "title": "Events",
-        "shortcuts": [
-            {
-                "title": "Events",
-                "icon": "calendar",
-                "url": "/admin/person/person/"
-            }
-        ]
-    },
-    {
         "title": "Institution",
         "shortcuts": [
             {
                 "title": "Institutions",
                 "icon": "building",
-                "url": "/admin/institution/contract/"
+                "url": "/admin/institution/institution/"
             },
             {
                 "title": "Contracts",
