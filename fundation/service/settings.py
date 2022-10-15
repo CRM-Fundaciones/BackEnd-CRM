@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 DJANGO_APPS = [
+    'admin_shortcuts',
+    'admin_auto_filters',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,3 +135,65 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Admin configurations
+
+ADMIN_SHORTCUTS = [
+    {
+        "title": "Persons",
+        "shortcuts": [
+            {
+                "title": "Person",
+                "icon": "user",
+                "url": "/admin/person/person/"
+            },
+            {
+                "title": "Volunteers",
+                "icon": "user",
+                "url": "/admin/person/volunteer/"
+            },
+            {
+                "title": "Patients",
+                "icon": "user",
+                "url": "/admin/person/patient/"
+            },
+        ]
+    },
+    {
+        "title": "Health",
+        "shortcuts": [
+            {
+                "title": "Health Professionals",
+                "icon": "user",
+                "url": "/admin/person/healthprofessional/"
+            },
+            {
+                "title": "Health Insurances",
+                "icon": "plus",
+                "url": "/admin/person/healthinsurance/"
+            },
+        ]
+    },
+    {
+        "title": "Institution",
+        "shortcuts": [
+            {
+                "title": "Institutions",
+                "icon": "building",
+                "url": "/admin/institution/institution/"
+            },
+            {
+                "title": "Contracts",
+                "icon": "file",
+                "url": "/admin/institution/contract/"
+            }
+        ]
+    }
+]
+
+ADMIN_SHORTCUTS_SETTINGS = {
+    "show_on_all_pages": False,
+    "hide_app_list": True,
+    "open_new_window": False,
+}
+
