@@ -45,7 +45,9 @@ LOCAL_APPS = [
     'person.apps.PersonConfig',
     'drugbank.apps.DrugbankConfig',
     'institution.apps.InstitutionConfig',
-    'events.apps.EventsConfig'
+    'events.apps.EventsConfig',
+    'places.apps.PlacesConfig',
+    'advertising.apps.AdvertisingConfig'
 ]
 
 
